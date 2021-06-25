@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -8,39 +8,47 @@
   <title>Proyecto One - Clima</title>
 </head>
 
-<body class="bg-gradient-to-r from-blue-500 via-blue-600 to-indigo-600">
+<body class="bg-gradient-to-r from-blue-500 via-blue-600 to-indigo-600 h-full">
 
-  <div class='container mx-auto grid grid-cols-12'>
-    <h1 class="col-span-full text-6xl text-center font-bold text-white mt-4">Clima</h1>
+  <div class='container mx-auto grid grid-cols-12 h-full grid-rows-4 sm:grid-rows-6 justify-center'>
+    <div class= 'col-span-full grid grid-rows-3 sm:grid-rows-1'>
+      <h1 class="text-7xl text-center font-bold text-white row-start-2 sm:row-start-1 sm:mt-4">Clima</h1>
+    </div>
 
-    <form class="grid grid-cols-6 gap-2 col-span-6 col-start-4 grid-rows-3 mt-4 max-w-3xl" action="#" method="POST" id="formulario">
-      <input class="col-span-full rounded-md text-center" type="text" name='ciudad' id="ciudad"
+    <form class="grid grid-cols-6 gap-2 col-span-6 col-start-4 max-w-3xl" action="#" method="POST" id="formulario">
+      <input class="col-span-full rounded-md text-center h-16 font-monserrat" type="text" name='ciudad' id="ciudad"
         placeholder="Escribe una ciudad">
-
-      <select class="col-span-2 gap-2 col-start-2 mt-2 bg-gray-200 border border-gray-200 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 rounded-md cursor-pointer"
+      <select
+        class="col-span-full gap-2 sm:col-span-3 sm:col-start-1 lg:col-span-2 lg:col-start-2 mt-2 h-16 font-monserrat bg-gray-200 border border-gray-200 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500 rounded-md cursor-pointer"
         id="pais">
-          <option disabled selected value="">--Eliga un Pais --</option>
-          <option value="AR" name='Argentina'>Argentina</option>
-          <option value="CO">Colombia</option>
-          <option value="CR">Costa Rica</option>
-          <option value="ES">España</option>
-          <option value="US">Estados Unidos</option>
-          <option value="MX">México</option>
-          <option value="PE">Perú</option>
+        <option disabled selected value=""> - Pais - </option>
+        <option value="AR">Argentina</option>
+        <option value="BR">Brasil</option>
+        <option value="BO">Bolivia</option>
+        <option value="CL">Chile</option>
+        <option value="CN">China</option>
+        <option value="CO">Colombia</option>
+        <option value="CR">Costa Rica</option>
+        <option value="ES">España</option>
+        <option value="US">Estados Unidos</option>
+        <option value="IT">Italia</option>
+        <option value="MX">México</option>
+        <option value="PY">Paraguay</option>
+        <option value="PE">Perú</option>
+        <option value="UY">Uruguay</option>
       </select>
       <input type="submit"
-        class="col-span-2 col-start-4 mt-2 bg-yellow-400 hover:bg-yellow-300 p-3 uppercase font-bold cursor-pointer rounded"
+        class="col-span-full sm:col-span-3 sm:col-start-4 lg:col-span-2 mt-2 h-16 bg-yellow-400 p-3 uppercase font-bold cursor-pointer rounded font-monserrat transition duration-500 hover:bg-yellow-300 "
         value="Buscar" />
     </form>
-
-    <div class="p-6 mt-10 grid col-span-12">
-
-      <div id="resultado">
-        <!-- <p class="text-center text-white mt-2 text-2xl"></p> -->
-      </div>
-
-    </div>
+    <div id="resultado" class="col-span-12 row-span-4 h-auto mt-2"></div>
+    <footer class='text-lg text-white col-span-12 row-start-7 grid grid-cols-3 text-center mt-10 sm:mt-0'>
+      <hr class='col-span-12'>
+      <p class='mt-2 mb-2 font-monserrat-300 text-xs lg:text-lg'>Created by: Carlos Deasi</p>
+      <p class='mt-2 mb-2 font-monserrat-300 text-xs lg:text-lg'>&copy; 2021 - All rights reserved</p>
+      <p class='mt-2 mb-2 font-monserrat-300 text-xs lg:text-lg'>Data provided by: <a href='https://openweathermap.org/' target='_blank'
+          class="transition duration-500 hover:text-yellow-200 text-xs lg:text-lg">OpenWeather</a></p>
+    </footer>
   </div>
 </body>
-
 </html>

@@ -1,11 +1,16 @@
 module.exports = {
   purge: {
-    enabled: false,
+    enabled: true,
     content: ['./src/index.html', './src/index.js']
   },
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        'bebas-neue':['Bebas Neue'],
+        'monserrat':['Montserrat']
+      }
+    },
   },
   variants: {
     extend: {},
