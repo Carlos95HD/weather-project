@@ -4,15 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Proyecto One - Clima</title>
+  <meta name="viewport" content="width=device-width, user-scalable= no">
+  <link rel="shortcut icon" href="../assets/icon/favicon.png" type="image/png">
+  <title>Clima Actual</title>
 </head>
 
-<body class="bg-gradient-to-r from-blue-500 via-blue-600 to-indigo-600 h-full">
+<body class="min-h-screen bg-gradient-to-r from-blue-500 via-blue-600 to-indigo-600 h-full">
 
-  <div class='container mx-auto grid grid-cols-12 h-full grid-rows-4 sm:grid-rows-6 justify-center'>
+  <div class='min-h-screen container mx-auto p-2 sm:p-0 sm:grid sm:grid-cols-12 h-full grid-rows-4 sm:grid-rows-6 justify-center'>
     <div class= 'col-span-full grid grid-rows-3 sm:grid-rows-1'>
-      <h1 class="text-7xl text-center font-bold text-white row-start-2 sm:row-start-1 sm:mt-4">Clima</h1>
+      <h1 class="text-6xl sm:text-7xl text-center font-bold text-white row-start-2 sm:row-start-1 sm:mt-4">Clima</h1>
     </div>
 
     <form class="grid grid-cols-6 gap-2 col-span-6 col-start-4 max-w-3xl" action="#" method="POST" id="formulario">
@@ -38,14 +39,15 @@
         <option value="UY">Uruguay</option>
       </select>
       <input type="submit"
-        class="col-span-full sm:col-span-3 sm:col-start-4 lg:col-span-2 mt-2 h-16 bg-yellow-400 p-3 uppercase font-bold cursor-pointer rounded font-monserrat transition duration-500 hover:bg-yellow-300 "
+        class="text-base sm:text-lg col-span-full sm:col-span-3 sm:col-start-4 lg:col-span-2 mt-2 h-16 bg-yellow-400 p-3 uppercase font-bold cursor-pointer rounded font-monserrat transition duration-500 hover:bg-yellow-300"
         value="Buscar" />
     </form>
     <div id="resultado" class="col-span-12 row-span-4 h-auto mt-2"></div>
-    <footer class='text-lg text-white col-span-12 row-start-7 grid grid-cols-3 text-center mt-10 sm:mt-0'>
+    <footer class='align-text-bottom text-lg text-white col-span-12 row-start-7 grid grid-cols-3 text-center mt-10 sm:mt-0'>
       <hr class='col-span-12'>
-      <p class='mt-2 mb-2 font-monserrat-300 text-xs lg:text-lg'>Created by: Carlos Deasi</p>
-      <p class='mt-2 mb-2 font-monserrat-300 text-xs lg:text-lg'>&copy; 2021 - All rights reserved</p>
+      <p class='mt-2 mb-2 font-monserrat-300 text-xs lg:text-lg'>Created by: <a href='https://github.com/Carlos95HD' target='_blank'
+        class="transition duration-500 hover:text-yellow-200 text-xs lg:text-lg">Carlos Deasi</a></p>
+      <p class='mt-2 mb-2 font-monserrat-300 text-xs lg:text-lg' id='reserved'></p>
       <p class='mt-2 mb-2 font-monserrat-300 text-xs lg:text-lg'>Data provided by: <a href='https://openweathermap.org/' target='_blank'
           class="transition duration-500 hover:text-yellow-200 text-xs lg:text-lg">OpenWeather</a></p>
     </footer>

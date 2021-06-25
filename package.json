@@ -8,7 +8,7 @@
     "build": "webpack --config webpack.prod.js",
     "build:dev": "webpack --config webpack.config.js",
     "start": "webpack serve --config webpack.config.js --open --port=8080",
-    "build-css": "npx tailwindcss-cli@latest build ./src/tailwind.css -o ./src/styles.css"
+    "build-css": "npx tailwindcss-cli@latest build ./src/css/tailwind.css -o ./src/styles.css"
   },
   "keywords": [],
   "author": "",

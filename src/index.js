@@ -91,16 +91,17 @@ function mostrarClimaHtml(datos) {
   const pronostico_completo = document.createElement("a");
 
   nombreCiudad.textContent = `${name} - ${country}`;
+  nombreCiudad.className = "text-2xl"
   tempActual.innerHTML = `${parseInt(temp)} &#8451`;
-  tempActual.className = "font-monserrat-400 text-6xl";
+  tempActual.className = "font-monserrat-400 text-4xl sm:text-6xl";
   tempMax.innerHTML = `Max Actual: ${parseInt(temp_max)} &#8451`;
   tempMin.innerHTML = `Min Actual: ${parseInt(temp_min)} &#8451`;
-  tempMax.classList.add("text-lg", "font-monserrat-300", "text-xl");
-  tempMin.classList.add("text-lg", "font-monserrat-300", "text-xl");
-  icono.src = `../src/assets/icon/${icon}.svg`;
-  icono.classList.add("mx-auto", "w-44");
+  tempMax.classList.add("text-lg", "font-monserrat-300", "sm:text-xl");
+  tempMin.classList.add("text-lg", "font-monserrat-300", "sm:text-xl");
+  icono.src = `./assets/icon/${icon}.svg`;
+  icono.classList.add("mx-auto", "sm:w-44","w-32");
   descripcion.textContent = `${capitalizarPrimeraLetra(description)}`;
-  descripcion.classList.add("text-1xl");
+  descripcion.classList.add("text-3xl", "sm:text-4xl");
   pronostico_completo.href = `https://openweathermap.org/city/${id}`;
   pronostico_completo.target = "_blank";
   pronostico_completo.innerHTML = `Ver pronostico completo`;
@@ -124,7 +125,7 @@ function mostrarClimaHtml(datos) {
   resultadoDiv.appendChild(tempMin);
   resultadoDiv.appendChild(pronostico_completo);
 
-  //Agregando div a resultados
+  //Añadiendo resultados
   resultado.appendChild(resultadoDiv);
 }
 
@@ -148,3 +149,7 @@ function spinner() {
                           <div class="rect5"></div>`;
   resultado.append(div_spinner);
 }
+
+const year = new Date().getFullYear();
+const yearHtml = document.querySelector('#reserved');
+yearHtml.innerHTML = `&copy; ${year} - All rights reserved`
