@@ -1,6 +1,6 @@
 # Weather-Project
 
-<p href="#" align="center" ><img src="preview.png"/></p>
+<p align="center"><img src="preview.png"/></p>
 
 <br>
 
