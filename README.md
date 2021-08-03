@@ -1,8 +1,14 @@
 # Weather-Project
 
-Proyecto Clima - Api
+![Tux, the Linux mascot](./preview.png)
+
+<br>
+
+<h2 align='center'> Search wheater - API OpenWeather</h2>
 
 ### Notas:
+
+<br>
 
 Reconstruir modulos de node
 ```
