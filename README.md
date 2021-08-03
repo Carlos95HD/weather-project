@@ -1,6 +1,6 @@
 # Weather-Project
 
-![Tux, the Linux mascot](./preview.png)
+<p href="#" align="center" ><img src="preview.png"/></p>
 
 <br>
 
