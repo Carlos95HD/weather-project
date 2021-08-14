@@ -1,6 +1,6 @@
 # Weather-Project
 
-<p align="center"><img src="preview.png"/></p>
+<p align="center" ><a href='https://clima-deasi.netlify.app/' target='_blank'><img src="preview.png"/></a></p>
 
 <br>
 
